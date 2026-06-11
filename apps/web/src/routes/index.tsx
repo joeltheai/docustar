@@ -20,7 +20,7 @@ function Home() {
 
       {AsyncResult.match(result, {
         onInitial: () => <p>Loading documents…</p>,
-        onSuccess: (docs) => (
+        onSuccess: ({ value: docs }) => (
           <ul>
             {docs.map((doc) => (
               <li key={doc.id}>
@@ -30,7 +30,7 @@ function Home() {
             ))}
           </ul>
         ),
-        onFailure: (error) => <p>Error: {String(error)}</p>,
+        onFailure: (failure) => <p>Error: {String(failure.cause)}</p>,
       })}
     </main>
   )
