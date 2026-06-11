@@ -1,0 +1,16 @@
+{
+  "name": "docustar",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "dev:web": "pnpm --filter @docustar/web dev",
+    "dev:server": "pnpm --filter @docustar/server dev",
+    "build": "pnpm run --filter @docustar/domain build && pnpm run --filter @docustar/server build && pnpm run --filter @docustar/web build"
+  },
+  "pnpm": {
+    "overrides": {
+      "effect": "4.0.0-beta.79"
+    },
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
