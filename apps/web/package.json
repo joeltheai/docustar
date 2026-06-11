@@ -1,0 +1,27 @@
+{
+  "name": "@docustar/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@docustar/domain": "workspace:*",
+    "@effect/atom-react": "4.0.0-beta.79",
+    "@tanstack/react-router": "^1.121.34",
+    "effect": "4.0.0-beta.79",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tanstack/router-plugin": "^1.121.34",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^4.5.2",
+    "typescript": "^5.9.3",
+    "vite": "^6.3.5"
+  }
+}
