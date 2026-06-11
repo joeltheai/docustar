@@ -1,0 +1,21 @@
+{
+  "name": "@docustar/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@docustar/domain": "workspace:*",
+    "@effect/platform-node": "4.0.0-beta.79",
+    "effect": "4.0.0-beta.79"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.3"
+  }
+}
